@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inovatech - Soluciones Digitales del Futuro</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     
@@ -14,137 +15,124 @@
 
      <!--Animated Background-->
 
+     <!-- Scroll Progress Bar -->
+    <div class="scroll-indicator" id="scrollIndicator"></div>
+
+    <!-- Animated Background -->
     <div class="animated-bg">
         <div class="bg-orb orb-1"></div>
         <div class="bg-orb orb-2"></div>
         <div class="bg-orb orb-3"></div>
-        <div class="bg-orb orb-4"></div>
-        </div>
-
-        <!--Navigation-->
-
-        <nav id="navbar">
-            <div class="navbar-container">
-                <div class="logo">Inovatech</div>
-                <ul class="nav-links">
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#servicios">Servicios</a></li>
-                    <li><a href="#nosotros">Nosotros</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                </ul>
-                <button class="mobile-menu-btn">☰</button>
-                </div>
-        </nav>
-
-        <!-- Hero Section-->
-
-        <section class="hero" id="inicio">
-            <div class="hero-content">
-                <h1>Transformamos Ideas en Realidad Digital</h1>
-                <p>Creamos experiencias digitales personalizadas para tu negocio. Tecnologia avanzada, diseño innovador y un enfoque centrado en el cliente.</p>
-                <div class="cta-buttons">
-                    <a href="#contacto" class="btn btn-primary">Comenzar Proyecto</a>
-                    <a href="#servicios" class="btn btn-secondary">Ver Servicios</a>
-                </div>
-            </div>
-        </section>
-
-        <!--Features Section-->
-
-        <section class="features" id="servicios">
-            <h2 class="section-title">Nuestros Servicios</h2>
-            <p class="section-subtitle">Ofrecemos una amplia gama de soluciones digitales para impulsar tu negocio.</p>
-
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        🚀
-                    </div>
-
-                    <h3>Desarrollo Web</h3>
-                    <p>Creamos aplicaciones web personalizadas para tu negocio, utilizando las últimas tecnologías y mejores prácticas de desarrollo.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        📱
-                    </div>
-
-                    <h3>Aplicaciones Móviles</h3>
-                    <p>Desarrollamos aplicaciones móviles nativas e híbridas para iOS y Android, adaptadas a las necesidades de tu empresa.</p>
-                </div>
-               
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        ⚡
-                    </div>
-                    <h3>Optimización</h3>
-                    <p>Mejoramos el rendimiento de tu sitio web para cargas ultrarrápidas y mejor posicionamiento en buscadores.</p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        🔒
-                    </div>
-                    <h3>Seguridad</h3>
-                    <p>Implementamos las mejores prácticas de seguridad para proteger tu sitio web y los datos de tus usuarios.</p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        📊
-                    </div>
-                    <h3>Analítica</h3>
-                    <p>Configuramos sistemas de análisis avanzados para que puedas tomar decisiones informadas basadas en datos.</p>
-                </div>
-            </div>
-        </section>
-
-        <!--Stats Section-->
-
-        <section class="stats" id="nosotros">
-            <div class="stats-container">
-                <div class="stat-item">
-                    <span class="stat-number" data-target="500">0</span>
-                    <span class="stat-label">Proyectos Realizados</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number" data-target="300">0</span>
-                    <span class="stat-label">Clientes Satisfechos</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number" data-target="100">0</span>
-                    <div class="stat-label">Proyectos Completados</div>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number" data-target="150">0</span>
-                    <div class="stat-label">Clientes Satisfechos</div>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number" data-target="2">0</span>
-                    <div class="stat-label">Años de experiencia</div>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number" data-target="98">0</span>
-                    <div class="stat-label">% Satisfacción</div>
-                </div>
-            </div>
-        </section>
-
-        <!--Footer-->
-
-        <footer id="contacto">
-            <div class="footer-content">
-                <div class="social-links">
-                    <a href="#" class="social-link">📧</a>
-                    <a href="#" class="social-link">💬</a>
-                    <a href="#" class="social-link">📱</a>
-                    <a href="#" class="social-link">🌐</a>
-                </div>
-                    <p>&copy; 2025 Inovatech. Todos los derechos reservados.</p>
-                    <p style="color: var(--text-secondary); margin-top: 1rem;">¿Listo para transformar tu presencia digital? Contáctanos hoy mismo.
-                 </p>        
-            </div>
-        </footer>
     </div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">InnovateTech</div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <button class="mobile-menu-btn">☰</button>
+        </div>
+    </nav>
+
+       <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <h1>Transformamos Ideas en Realidad Digital</h1>
+            <p>Creamos experiencias digitales extraordinarias que impulsan tu negocio hacia el futuro. Tecnología avanzada, diseño innovador y resultados excepcionales.</p>
+            <div class="cta-buttons">
+                <a href="#contacto" class="btn btn-primary">Comenzar Proyecto</a>
+                <a href="#servicios" class="btn btn-secondary">Ver Servicios</a>
+            </div>
+        </div>
+    </section>
+
+<!-- Features Section -->
+    <section class="features" id="servicios">
+        <h2 class="section-title">Nuestros Servicios</h2>
+        <p class="section-subtitle">Ofrecemos soluciones integrales para llevar tu presencia digital al siguiente nivel</p>
+        
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">🚀</div>
+                <h3>Desarrollo Web</h3>
+                <p>Creamos aplicaciones web modernas y responsivas utilizando las últimas tecnologías. Desde landing pages hasta aplicaciones complejas.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">🎨</div>
+                <h3>Diseño UX/UI</h3>
+                <p>Diseñamos interfaces intuitivas y atractivas que ofrecen experiencias de usuario excepcionales y aumentan la conversión.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">📱</div>
+                <h3>Apps Móviles</h3>
+                <p>Desarrollamos aplicaciones móviles nativas e híbridas que funcionan perfectamente en iOS y Android.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <h3>Optimización</h3>
+                <p>Mejoramos el rendimiento de tu sitio web para cargas ultrarrápidas y mejor posicionamiento en buscadores.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">🔒</div>
+                <h3>Seguridad</h3>
+                <p>Implementamos las mejores prácticas de seguridad para proteger tu sitio web y los datos de tus usuarios.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">📊</div>
+                <h3>Analytics</h3>
+                <p>Configuramos sistemas de análisis avanzados para que puedas tomar decisiones basadas en datos reales.</p>
+            </div>
+        </div>
+    </section>
+
+
+ <!-- Stats Section -->
+    <section class="stats" id="nosotros">
+        <div class="stats-container">
+            <div class="stat-item">
+                <span class="stat-number" data-target="500">0</span>
+                <div class="stat-label">Proyectos Completados</div>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" data-target="150">0</span>
+                <div class="stat-label">Clientes Satisfechos</div>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" data-target="5">0</span>
+                <div class="stat-label">Años de Experiencia</div>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" data-target="98">0</span>
+                <div class="stat-label">% Satisfacción</div>
+            </div>
+        </div>
+    </section>
+
+  <!-- Footer -->
+    <footer id="contacto">
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="#" class="social-link">📧</a>
+                <a href="#" class="social-link">💬</a>
+                <a href="#" class="social-link">📱</a>
+                <a href="#" class="social-link">🌐</a>
+            </div>
+            <p>&copy; 2025 InnovateTech. Todos los derechos reservados.</p>
+            <p style="color: var(--text-secondary); margin-top: 1rem;">
+                ¿Listo para transformar tu presencia digital? Contáctanos hoy mismo.
+            </p>
+        </div>
+    </footer>
+ </div>
 </body>
 </html>
